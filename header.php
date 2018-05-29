@@ -1,5 +1,7 @@
 <?php
 
+include 'includes/dbh.inc.php';
+
 session_start();
 
 ?>
@@ -25,8 +27,17 @@ session_start();
 				//log out function
 				if (isset($_SESSION['u_id']))
 				{
-					echo '<form action="includes/logout.inc.php" method="POST">
+
+					
+					echo '<form action="includes/search.php" method="POST">
+							<input type="text" name="search" placeholder="Search">
+							<button type="submit" name="submit-search">Search</button>
+							</form>';
+
+					echo	'<form action="includes/logout.inc.php" method="POST">
 							<button type="submit" name="submit">Logout</button></form>';
+							
+							
 
 				}
 				else 
@@ -38,10 +49,9 @@ session_start();
 				<a href="signup.php">Sign up</a>';
 				}
 
-				?>
+					
 
-				
-				
+				?>
 			
 			</div>
 		</div>
