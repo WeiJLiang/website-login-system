@@ -1,14 +1,12 @@
 <?php
 	
 	include 'dbh.inc.php';
+	
 ?>
-<head>
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
+
 <h1>Search page</h1>
 
-<div class="user">
+<div>
 	<?php
 		if (isset($_POST['submit-search']))
 		{

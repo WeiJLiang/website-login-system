@@ -3,10 +3,6 @@
 include 'search.php';
 ?>	
 
-<head>
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
 
 <h1>User Information</h1>
 
@@ -14,7 +10,7 @@ include 'search.php';
 	<?php
 
 	$user = mysqli_real_escape_string($conn, $_GET['user']);
-	$sql = "SELECT * FROM users";
+	$sql = "SELECT * FROM users WHERE user_username='$user'";
 	$result = mysqli_query($conn, $sql);
 	$queryResults = mysqli_num_rows($result);
 	if ($queryResults > 0)
