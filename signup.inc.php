@@ -30,8 +30,10 @@ if (isset($_POST ['submit']))
 		{//check if email is valid
 			if (!filter_var($email, FILTER_VALIDATE_EMAIL))
 			{
+				
 			header("Location: ../signup.php?signup=INVALID_EMAIL");
 			exit();
+
 			}
 			else
 			{
