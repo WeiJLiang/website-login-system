@@ -1,2 +1,2 @@
 # login-system
-This is my first website's login system.
+This is my classic game website's login system.
