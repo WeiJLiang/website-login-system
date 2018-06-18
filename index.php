@@ -1,5 +1,6 @@
 <?php
 	include_once 'header.php';
+
 ?>
 
 
@@ -22,6 +23,25 @@
 			?>
 		</div>
 	</section>
+<head>
+    <title>Tetris</title>
+	 <style >
+        body {
+    	text-align: center;
+    	font-size: 2em;
+
+    }
+        canvas {
+        border: solid .2em #fff;
+        height: 90vh;
+      }
+    </style>
+</head>
+
+    <h2><div id="score"></div></h2>
+    <canvas id="tetris" width="240" height="400" />
+    <script src="tetris.js"></script>
+</body>
 
 <?php
 	include_once 'footer.php';
